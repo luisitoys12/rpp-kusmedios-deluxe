@@ -1,0 +1,168 @@
+/* RPP Kusmedios Deluxe - Admin Styles */
+
+.rpkus-box {
+  margin-top: 6px;
+}
+
+.rpkus-row {
+  margin-bottom: 14px;
+}
+
+.rpkus-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.rpkus-label strong {
+  display: block;
+  font-size: 13px;
+  color: #1d2327;
+}
+
+.rpkus-hint {
+  display: block;
+  font-size: 11px;
+  color: #646970;
+  margin-top: 2px;
+}
+
+.rpkus-select {
+  min-width: 260px;
+  max-width: 100%;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #8c8f94;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 13px;
+  color: #2c3338;
+}
+
+.rpkus-select:focus {
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+  outline: none;
+}
+
+.rpkus-input {
+  width: 100%;
+  max-width: 480px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #8c8f94;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #2c3338;
+}
+
+.rpkus-input-short {
+  width: 100px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #8c8f94;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.rpkus-input:focus,
+.rpkus-input-short:focus {
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+  outline: none;
+}
+
+.rpkus-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rpkus-test-btn {
+  white-space: nowrap;
+}
+
+.rpkus-test-result {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rpkus-test-result.ok  { color: #008a00; }
+.rpkus-test-result.err { color: #d63638; }
+
+/* Platform-specific panels - hidden by default */
+.rpkus-panel {
+  display: none;
+  margin-top: 10px;
+  padding: 12px 14px;
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+}
+
+.rpkus-panel.rpkus-visible {
+  display: block;
+}
+
+.rpkus-info-box {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #50575e;
+  line-height: 1.7;
+}
+
+.rpkus-info-box code {
+  font-size: 11px;
+  background: #e8e8e8;
+  padding: 1px 4px;
+  border-radius: 2px;
+  word-break: break-all;
+}
+
+.rpkus-section-title {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.rpkus-toggle-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #2c3338;
+}
+
+.rpkus-toggle-label input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.rpkus-azura-only {
+  display: none;
+}
+
+.rpkus-platform-azuracast .rpkus-azura-only {
+  display: flex;
+}
+
+.rpkus-note {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #646970;
+  font-style: italic;
+}
+
+/* Separator */
+.rpkus-box > .rpkus-panel + .rpkus-panel {
+  margin-top: 6px;
+}
