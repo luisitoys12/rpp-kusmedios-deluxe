@@ -2,6 +2,10 @@
 
 .rpkus-box {
   margin-top: 6px;
+  border: 1px solid #e3e6e8;
+  border-radius: 6px;
+  padding: 12px;
+  background: #fafbfc;
 }
 
 .rpkus-row {
@@ -55,6 +59,13 @@
   color: #2c3338;
 }
 
+.rpkus-input:focus,
+.rpkus-input-short:focus {
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+  outline: none;
+}
+
 .rpkus-input-short {
   width: 100px;
   height: 32px;
@@ -62,13 +73,7 @@
   border: 1px solid #8c8f94;
   border-radius: 3px;
   font-size: 13px;
-}
-
-.rpkus-input:focus,
-.rpkus-input-short:focus {
-  border-color: #2271b1;
-  box-shadow: 0 0 0 1px #2271b1;
-  outline: none;
+  color: #2c3338;
 }
 
 .rpkus-input-row {
@@ -165,4 +170,28 @@
 /* Separator */
 .rpkus-box > .rpkus-panel + .rpkus-panel {
   margin-top: 6px;
+}
+
+/* Platform panels specific overrides */
+.rpkus-panel.azuracast   { }
+.rpkus-panel.zenofm      { }
+.rpkus-panel.sonicpanel  { }
+.rpkus-panel.shoutcast   { }
+.rpkus-panel.icecast     { }
+
+/* Better focus states for inputs within panels */
+.rpkus-panel :focus {
+  outline: 2px solid #2271b1;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .rpkus-box > .rpkus-panel + .rpkus-panel {
+	margin-top: 12px;
+  }
+  button[rpkus-copy-stream],
+  button[rpkus-apply-stream] {
+	transition: none;
+  }
 }
